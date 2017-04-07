@@ -1,10 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head lang="en">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>To Do</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="todo.css">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.0.min.js"></script>
+    <script src="todo1.js"></script>
 </head>
 <body>
+    <section>
+        <div>
+            <h1>Todo</h1>
+        </div>
+        <section>
+            <form action="#" name="new-task" class="task-form">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Add task:</div>
+                    <div class="panel-body">
+                        <input type="text" name="task" class="task-form__text"/>
+                        <input type="submit" value="Add" class="btn btn-primary " />
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th class="table__id">#</th>
+                    <th class="table__note">Что делать</th>
+                    <th>&nbsp;</th>
+                    <th>&nbsp;</th>
+                </tr>
+            </thead>
+            <tbody class="table__body">
+
+            </tbody>
+        </table>
+    </section>
+    <script>
+//        $(document).ready(function(){
+//            alert('Ваша версия jQuery ' + jQuery.fn.jquery);
+//                    $(".task-form").html;
+//        });
+    </script>
 
 </body>
 </html>
