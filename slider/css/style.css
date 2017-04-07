@@ -1,0 +1,105 @@
+body {
+    font: normal 15px/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding-top: 20px;
+    color: #232525;
+    -webkit-font-smoothing: antialiased;
+}
+div {
+    display: block;
+}
+.slider__images {
+    position: relative;
+    overflow: hidden;
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+}
+.slider__images-wrap {
+    font-size: 0;
+    height: 529px;
+    white-space: nowrap;
+    width: 600px;
+    height: 300px;
+    transition: margin-left 1s ease-out;
+}
+.slider__navigation {
+    width: 940px;
+    margin: 0 auto;
+}
+.slider__pager {
+    margin-top: 3px;
+    text-decoration: none;
+}
+.slider__pager_previous {
+    float: left;
+    margin-right: 5px;
+}
+.slider__pager_next {
+    float: left;
+    margin-right: 5px;
+}
+.slider a:link,
+.slider a:visited {
+    color: #333333;
+}
+.slider a:hover,
+.slider a:active {
+    color: #9e2020;
+}
+.slider__pagination {
+    /*list-style-type: circle;*/
+    /*background-color: red;*/
+    float: left;
+    margin: 6px 0 0;
+    list-style: none;
+}
+ul.slider__pagination li:nth-child(4) {
+    /*background-color: red;*/
+}
+.slider__pagination li {
+    float: left;
+    margin: 0 1px;
+}
+.slider__pagination li a {
+    display: block;
+    float: left;
+    left: 10px;
+    overflow: hidden;
+    width: 13px;
+    height: 0;
+    padding-top: 13px;
+    border: 2px solid #111111;
+    border-radius: 50%;
+    /*background-image: url('../img/nav.png');*/
+    /*background-position: 0 0;*/
+}
+.slider__pagination li a.active,
+.slider__pagination li a:hover.active {
+    /*background-position: 0 -13px;*/
+    background-color: red;
+}
+.slider__pagination li a:hover {
+    /*background-position: 0 -26px;*/
+}
+.template {
+    display: none;
+}
+/*.slider__pagination {*/
+    /*left: 0;*/
+    /*bottom: 10px;*/
+    /*margin: 0;*/
+    /*margin-left: 20px;*/
+    /*width: auto;*/
+/*}*/
+/*.slider__pagination li {*/
+    /*border: 2px solid #2cc7c1;*/
+    /*border-radius: 50%;*/
+    /*background: #fff;*/
+    /*height: 12px;*/
+    /*width: 12px;*/
+/*}*/
+/*.slider__pagination li.active {*/
+    /*background: #2cc7c1;*/
+    /*height: 14px;*/
+    /*width: 14px;*/
+/*}*/
