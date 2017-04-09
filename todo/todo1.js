@@ -1,6 +1,7 @@
 /**
  * Created by Kolya on 07.04.2017.
  */
+
 $(function () {
     var ToDo = function () {
         this.model = [
@@ -11,6 +12,7 @@ $(function () {
         this.inputField = $('.task-form__text');
         this.form = $('.task-form');
         this.todoList = $('.table__body');
+
         this.init();
     };
 
@@ -47,9 +49,10 @@ $(function () {
     ToDo.prototype.onFormSubmit = function(e) {
         e.preventDefault();
         // console.log(this.inputField.val());
+        if(!this.inputField.val())  return;
         this.addItem(this.inputField.val());
         this.form.trigger('reset');
-        console.log(this.model);
+        // console.log(this.model);
 
 
     };
@@ -62,19 +65,31 @@ $(function () {
     ToDo.prototype.init = function() {
         var __self = this;
         this.renderList();
+
         this.todoList.on('click', '.btn-danger', function (e) {
             var index = $(e.target).data('index');
                 // console.log(index);
             __self.removeItem(index);
         });
+
+        // this.todoList.on('click', '.btn-info', function (e) {
+        //     console.log('info');
+        // });
         this.form.submit(function (e) {
             __self.onFormSubmit(e);
         });
 
 
     };
-
+   
     window.todo = new ToDo();
-    // console.log(this.model.length);
+
+    // this.todoList.on('click', '.btn-info', function (e) {
+    //     console.log('info');
+    // });
 });
+
+
+
+
 
